@@ -29,7 +29,7 @@ list_of_files = [
     "templates/index.html"
 ]
 
-
+ 
 for filepath in list_of_files:
     filepath = Path(filepath)
 

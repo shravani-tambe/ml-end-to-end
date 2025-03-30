@@ -62,3 +62,168 @@ Source-Age: 0
 [2025-03-29 10:43:11,323: INFO: 40091733: Splited data into training and test sets]
 [2025-03-29 10:43:11,324: INFO: 40091733: (857, 13)]
 [2025-03-29 10:43:11,327: INFO: 40091733: (286, 13)]
+[2025-03-29 16:20:02,941: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-29 16:20:02,945: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-29 16:20:02,950: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-29 16:20:02,950: INFO: common: created directory at: artifacts]
+[2025-03-29 16:37:43,772: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-29 16:37:43,775: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-29 16:37:43,777: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-29 16:37:43,778: INFO: common: created directory at: artifacts]
+[2025-03-29 16:40:02,182: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-29 16:40:02,199: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-29 16:40:02,200: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-29 16:40:02,200: INFO: common: created directory at: artifacts]
+[2025-03-29 16:42:43,931: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-29 16:42:43,932: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-29 16:42:43,937: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-29 16:42:43,937: INFO: common: created directory at: artifacts]
+[2025-03-29 16:42:43,937: INFO: common: created directory at: artifacts/model_trainer]
+[2025-03-29 20:21:06,354: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-29 20:21:06,358: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-29 20:21:06,361: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-29 20:21:06,364: INFO: common: created directory at: artifacts]
+[2025-03-29 20:21:06,364: INFO: common: created directory at: artifacts/model_trainer]
+[2025-03-29 21:43:58,896: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-29 21:43:58,900: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-29 21:43:58,900: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-29 21:43:58,900: INFO: common: created directory at: artifacts]
+[2025-03-29 21:43:58,900: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-03-29 21:43:59,012: INFO: common: json file saved at: artifacts\model_evaluation\metrics.json]
+[2025-03-29 21:57:29,306: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-29 21:57:29,316: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-29 21:57:29,320: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-29 21:57:29,320: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-29 21:57:29,320: INFO: common: created directory at: artifacts]
+[2025-03-29 21:57:29,325: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-29 21:57:31,256: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 21984
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "85a38be3d4c70e3b6dc97fc47873623da88c9b850e1526aeb57ff236bdd2815c"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 156F:1FDFDA:266E1A:65C99E:67E81F74
+Accept-Ranges: bytes
+Date: Sat, 29 Mar 2025 16:27:35 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100028-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1743265655.777887,VS0,VE283
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 799a0367872f864f2e7db036ea1f851c7a256609
+Expires: Sat, 29 Mar 2025 16:32:35 GMT
+Source-Age: 0
+
+]
+[2025-03-29 21:57:31,266: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-03-29 21:57:31,266: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-03-29 21:57:31,269: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-29 21:57:31,269: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-29 21:57:31,277: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-29 21:57:31,277: INFO: common: created directory at: artifacts]
+[2025-03-29 21:57:31,279: INFO: common: created directory at: artifacts/data_validation]
+[2025-03-29 21:57:31,280: ERROR: main: [Errno 2] No such file or directory: 'artifacts/data_ingestion/winequality-red.csv']
+Traceback (most recent call last):
+  File "c:\Users\LENOVO\OneDrive\Computer Engineering\Programming\Machine Learning\ml-end-to-end\main.py", line 26, in <module>
+    data_ingestion.main()
+  File "c:\users\lenovo\onedrive\computer engineering\programming\machine learning\ml-end-to-end\src\mlProject\pipeline\stage_02_data_validation.py", line 16, in main
+    data_validation.validate_all_columns()
+  File "c:\users\lenovo\onedrive\computer engineering\programming\machine learning\ml-end-to-end\src\mlProject\components\data_validation.py", line 36, in validate_all_columns
+    raise e
+  File "c:\users\lenovo\onedrive\computer engineering\programming\machine learning\ml-end-to-end\src\mlProject\components\data_validation.py", line 17, in validate_all_columns
+    data = pd.read_csv(self.config.unzip_data_dir)
+  File "C:\Users\LENOVO\OneDrive\Computer Engineering\Programming\Machine Learning\ml-end-to-end\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\LENOVO\OneDrive\Computer Engineering\Programming\Machine Learning\ml-end-to-end\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\LENOVO\OneDrive\Computer Engineering\Programming\Machine Learning\ml-end-to-end\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\LENOVO\OneDrive\Computer Engineering\Programming\Machine Learning\ml-end-to-end\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\LENOVO\OneDrive\Computer Engineering\Programming\Machine Learning\ml-end-to-end\.venv\lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_ingestion/winequality-red.csv'
+[2025-03-30 12:17:15,473: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-30 12:17:15,473: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-30 12:17:15,473: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-30 12:17:15,488: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-30 12:17:15,488: INFO: common: created directory at: artifacts]
+[2025-03-30 12:17:15,488: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-30 12:17:17,622: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 21314
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "6bf518658e1398638afccf51fcd1c3bf795ad8b440f51243d26409da9095884c"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 433E:27BDDD:A8BAF:2118E5:67E8E8F3
+Accept-Ranges: bytes
+Date: Sun, 30 Mar 2025 06:47:21 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100035-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1743317241.821112,VS0,VE262
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: bb91118d8b9d1c2a2fabbc902b75dce5f7d53776
+Expires: Sun, 30 Mar 2025 06:52:21 GMT
+Source-Age: 0
+
+]
+[2025-03-30 12:17:17,640: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-03-30 12:17:17,640: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-03-30 12:17:17,658: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-30 12:17:17,661: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-30 12:17:17,661: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-30 12:17:17,669: INFO: common: created directory at: artifacts]
+[2025-03-30 12:17:17,672: INFO: common: created directory at: artifacts/data_validation]
+[2025-03-30 12:17:17,687: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-03-30 12:17:17,701: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-03-30 12:17:17,703: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-03-30 12:17:17,704: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-03-30 12:17:17,704: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-30 12:17:17,704: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-30 12:17:17,717: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-30 12:17:17,718: INFO: common: created directory at: artifacts]
+[2025-03-30 12:17:17,720: INFO: common: created directory at: artifacts/model_trainer]
+[2025-03-30 12:17:17,720: ERROR: main: [Errno 2] No such file or directory: 'artifacts/data_transformation/train.csv']
+Traceback (most recent call last):
+  File "c:\Users\LENOVO\OneDrive\Computer Engineering\Programming\Machine Learning\ml-end-to-end\main.py", line 50, in <module>
+    data_ingestion.main()
+  File "c:\users\lenovo\onedrive\computer engineering\programming\machine learning\ml-end-to-end\src\mlProject\pipeline\stage_04_model_trainer.py", line 17, in main
+    model_trainer_config.train()
+  File "c:\users\lenovo\onedrive\computer engineering\programming\machine learning\ml-end-to-end\src\mlProject\components\model_trainer.py", line 15, in train
+    train_data = pd.read_csv(self.config.train_data_path)
+  File "C:\Users\LENOVO\OneDrive\Computer Engineering\Programming\Machine Learning\ml-end-to-end\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\LENOVO\OneDrive\Computer Engineering\Programming\Machine Learning\ml-end-to-end\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\LENOVO\OneDrive\Computer Engineering\Programming\Machine Learning\ml-end-to-end\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\LENOVO\OneDrive\Computer Engineering\Programming\Machine Learning\ml-end-to-end\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\LENOVO\OneDrive\Computer Engineering\Programming\Machine Learning\ml-end-to-end\.venv\lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_transformation/train.csv'

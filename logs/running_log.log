@@ -227,3 +227,106 @@ Traceback (most recent call last):
   File "C:\Users\LENOVO\OneDrive\Computer Engineering\Programming\Machine Learning\ml-end-to-end\.venv\lib\site-packages\pandas\io\common.py", line 873, in get_handle
     handle = open(
 FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_transformation/train.csv'
+[2025-03-30 12:56:59,118: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-30 12:56:59,128: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-30 12:56:59,128: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-30 12:56:59,128: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-30 12:56:59,128: INFO: common: created directory at: artifacts]
+[2025-03-30 12:56:59,128: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-30 12:57:00,961: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 21314
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "6bf518658e1398638afccf51fcd1c3bf795ad8b440f51243d26409da9095884c"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 433E:27BDDD:A8BAF:2118E5:67E8E8F3
+Accept-Ranges: bytes
+Date: Sun, 30 Mar 2025 07:27:04 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100033-HYD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1743319624.241125,VS0,VE265
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 18e7270f68726bc0abaee6e89770a4961373ea75
+Expires: Sun, 30 Mar 2025 07:32:04 GMT
+Source-Age: 0
+
+]
+[2025-03-30 12:57:00,971: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-03-30 12:57:00,971: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-03-30 12:57:00,974: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-30 12:57:00,974: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-30 12:57:00,980: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-30 12:57:00,980: INFO: common: created directory at: artifacts]
+[2025-03-30 12:57:00,980: INFO: common: created directory at: artifacts/data_validation]
+[2025-03-30 12:57:00,996: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-03-30 12:57:01,004: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-03-30 12:57:01,043: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-03-30 12:57:01,043: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-03-30 12:57:01,052: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-30 12:57:01,052: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-30 12:57:01,052: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-30 12:57:01,052: INFO: common: created directory at: artifacts]
+[2025-03-30 12:57:01,052: INFO: common: created directory at: artifacts/model_trainer]
+[2025-03-30 12:57:01,052: ERROR: main: [Errno 2] No such file or directory: 'artifacts/data_transformation/train.csv']
+Traceback (most recent call last):
+  File "c:\Users\LENOVO\OneDrive\Computer Engineering\Programming\Machine Learning\ml-end-to-end\main.py", line 50, in <module>
+    data_ingestion.main()
+  File "c:\users\lenovo\onedrive\computer engineering\programming\machine learning\ml-end-to-end\src\mlProject\pipeline\stage_04_model_trainer.py", line 17, in main
+    model_trainer_config.train()
+  File "c:\users\lenovo\onedrive\computer engineering\programming\machine learning\ml-end-to-end\src\mlProject\components\model_trainer.py", line 15, in train
+    train_data = pd.read_csv(self.config.train_data_path)
+  File "C:\Users\LENOVO\OneDrive\Computer Engineering\Programming\Machine Learning\ml-end-to-end\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\LENOVO\OneDrive\Computer Engineering\Programming\Machine Learning\ml-end-to-end\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\LENOVO\OneDrive\Computer Engineering\Programming\Machine Learning\ml-end-to-end\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\LENOVO\OneDrive\Computer Engineering\Programming\Machine Learning\ml-end-to-end\.venv\lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\LENOVO\OneDrive\Computer Engineering\Programming\Machine Learning\ml-end-to-end\.venv\lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_transformation/train.csv'
+[2025-03-30 13:27:14,333: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-30 13:27:14,335: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-30 13:27:14,336: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-30 13:27:14,338: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-30 13:27:14,338: INFO: common: created directory at: artifacts]
+[2025-03-30 13:27:14,339: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-30 13:27:14,339: INFO: data_ingestion: File already exists of size: ~ 21 KB]
+[2025-03-30 13:27:14,341: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-03-30 13:27:14,342: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-03-30 13:27:14,343: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-30 13:27:14,343: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-30 13:27:14,349: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-30 13:27:14,349: INFO: common: created directory at: artifacts]
+[2025-03-30 13:27:14,350: INFO: common: created directory at: artifacts/data_validation]
+[2025-03-30 13:27:14,361: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-03-30 13:27:14,361: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-03-30 13:27:14,362: ERROR: main: Your data schema is not valid]
+Traceback (most recent call last):
+  File "c:\Users\LENOVO\OneDrive\Computer Engineering\Programming\Machine Learning\ml-end-to-end\main.py", line 38, in <module>
+    data_ingestion.main()
+  File "c:\users\lenovo\onedrive\computer engineering\programming\machine learning\ml-end-to-end\src\mlProject\pipeline\stage_03_data_transformation.py", line 30, in main
+    raise e
+  File "c:\users\lenovo\onedrive\computer engineering\programming\machine learning\ml-end-to-end\src\mlProject\pipeline\stage_03_data_transformation.py", line 26, in main
+    raise Exception("Your data schema is not valid")
+Exception: Your data schema is not valid
